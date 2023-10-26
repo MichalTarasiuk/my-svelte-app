@@ -1,4 +1,6 @@
 <script>
+	import Nested from '$lib/ui/nested.svelte';
+
 	let name = 'Svelte';
 
 	let src = '/svelte.png';
@@ -8,6 +10,7 @@
 <main>
 	<h1>Hello {name.toUpperCase()}</h1>
 	<img {src} alt="{alt} logo" />
+	<Nested />
 </main>
 
 <style>
@@ -20,4 +23,9 @@
 	img {
 		width: 100px;
 	}
+
+	/* Stles don't leak in
+	p {
+		color: red;
+	} */
 </style>
