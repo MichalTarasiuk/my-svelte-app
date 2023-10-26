@@ -1,5 +1,5 @@
 <script>
-	import Nested from '$lib/ui/nested.svelte';
+	import Description from '$lib/ui/description.svelte';
 
 	let name = 'Svelte';
 
@@ -10,7 +10,7 @@
 <main>
 	<h1>Hello {name.toUpperCase()}</h1>
 	<img {src} alt="{alt} logo" />
-	<Nested />
+	<Description />
 </main>
 
 <style>
@@ -18,6 +18,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 0.5rem;
+		padding-inline: 20rem;
 	}
 
 	img {
