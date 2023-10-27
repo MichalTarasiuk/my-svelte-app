@@ -8,4 +8,8 @@
 		<h2>Declaring props</h2>
 		<ComponentWithProps prop="value" />
 	</section>
+	<section>
+		<h2>Default values</h2>
+		<ComponentWithProps />
+	</section>
 </main>
