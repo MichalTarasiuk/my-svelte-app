@@ -1,6 +1,7 @@
 <script>
 	import ColorPicker from '$lib/components/colorPicker.svelte';
 	import Counter from '$lib/components/counter.svelte';
+	import RandomNumber from '$lib/components/randomNumber.svelte';
 </script>
 
 <main>
@@ -12,5 +13,9 @@
 	<section>
 		<h2>Each blocks</h2>
 		<ColorPicker />
+	</section>
+	<section>
+		<h2>Await blocks</h2>
+		<RandomNumber />
 	</section>
 </main>
