@@ -1,5 +1,5 @@
 <script>
-	import Description from '$lib/ui/description.svelte';
+	import Description from '$lib/components/description.svelte';
 
 	let name = 'Svelte';
 
