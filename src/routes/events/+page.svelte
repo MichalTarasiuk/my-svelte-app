@@ -2,6 +2,7 @@
 	import ClickOnceBtn from '$lib/components/clickOnceBtn.svelte';
 	import PointerMoveDisplay from '$lib/components/pointerMoveDisplay.svelte';
 	import Inner from '$lib/components/inner.svelte';
+	import Outer from '$lib/components/outer.svelte';
 
 	function handleMessage({ detail }: { detail?: { text?: string } }) {
 		alert(detail?.text);
@@ -21,5 +22,9 @@
 	<section>
 		<h2>Component events</h2>
 		<Inner on:message={handleMessage} />
+	</section>
+	<section>
+		<h2>Event forwarding</h2>
+		<Outer on:message={handleMessage} />
 	</section>
 </main>

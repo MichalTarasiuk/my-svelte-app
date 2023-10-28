@@ -20,7 +20,8 @@
 
 <style>
 	div {
-		position: absolute;
-		inset: 0;
+		max-width: 400px;
+		height: 100px;
+		background-color: red;
 	}
 </style>
