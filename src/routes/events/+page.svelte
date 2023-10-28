@@ -3,9 +3,14 @@
 	import PointerMoveDisplay from '$lib/components/pointerMoveDisplay.svelte';
 	import Inner from '$lib/components/inner.svelte';
 	import Outer from '$lib/components/outer.svelte';
+	import BigRedButton from '$lib/components/bigRedButton.svelte';
 
 	function handleMessage({ detail }: { detail?: { text?: string } }) {
 		alert(detail?.text);
+	}
+
+	function handleClick() {
+		alert('clicked');
 	}
 </script>
 
@@ -26,5 +31,9 @@
 	<section>
 		<h2>Event forwarding</h2>
 		<Outer on:message={handleMessage} />
+	</section>
+	<section>
+		<h2>Button event forwarding</h2>
+		<BigRedButton on:click={handleClick} />
 	</section>
 </main>
