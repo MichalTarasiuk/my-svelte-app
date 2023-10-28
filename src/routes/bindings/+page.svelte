@@ -1,6 +1,7 @@
 <script>
 	import NumericInput from '$lib/components/numericInput.svelte';
 	import TextInput from '$lib/components/textInput.svelte';
+	import CheckboxInput from '$lib/components/checkboxInput.svelte';
 </script>
 
 <main>
@@ -12,5 +13,9 @@
 	<section>
 		<h2>Numeric inputs</h2>
 		<NumericInput />
+	</section>
+	<section>
+		<h2>Checkbox inputs</h2>
+		<CheckboxInput />
 	</section>
 </main>
